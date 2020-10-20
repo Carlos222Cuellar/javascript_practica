@@ -29,3 +29,31 @@ var carlos = {
 var otroCarlos = {
     nombre: 'carlos'
 };
+
+/*
+al comparar los objetos ya sea con === o == da false ya que no hace lo mismo que con datos primitivos
+lo que hace js es preguntar por su referencia si queremos que la referencia sea la misma para que al comparar de true
+hacemos 
+
+var otroCarlos = carlos
+aqui decimos que carlos contiene lo mismo que otroCarlos porque los dos hacen referencia a la misma direccion de memoria
+
+si vamos al navegador y le cambiamos el valor a otroCarlos tambien se cambiara en el objeto
+carlos porque los dos apuntan a la misma direccion de memoria
+
+pero si hacemos un desgloce del objeto como a continuacion
+
+var carlos = {
+nombre: 'carlos'
+
+};
+
+var otroCarlos = {
+    ...carlos
+}
+
+se desglosa carlos en otroCarlos pero ya no son iguales ya que otroCarlos es otro objeto que apunta a otro
+lado en la memoria
+
+
+*/
