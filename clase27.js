@@ -34,5 +34,3 @@ obtenerPersonaje(3)
 //     Por el asincronismo de JS.
 // No sabemos en qué orden nos llegarán las respuestas, esto depende del servidor y de cada uno de los requests.
 // Iniciamos los requests en un determinado orden pero no sabemos en qué orden van a llegar.
-
-//en mi caso si llego en el orden que lo pedi la explicacion de arriba es como llego en el ejemplo visto en clase
