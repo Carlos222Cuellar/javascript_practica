@@ -129,4 +129,4 @@ obtenerPersonaje(0) //invocamos a la funcion y le pasamos el id que queremos
     .then(function(personaje) { //si se resulve la promesa obtenemos la data con la informacion
         console.log(personaje.name) //obtenemos el nombre del personaje de la data que recibimos
     })
-    .catch(onError) //si no se cumple le pasamos al catch la funcion sin parametro porque ya lo habia recibido anteriormente cuando se declara
+    .catch(onError); //si no se cumple le pasamos al catch la funcion sin parametro porque ya lo habia recibido anteriormente cuando se declara
