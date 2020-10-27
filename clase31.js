@@ -22,7 +22,7 @@ async function obtenerPersonajes() { //tenemos que usar la palabra async para de
     var promesas = ids.map(id => obtenerPersonaje(id)) //declaramos la variable promesas que va recibir la data y va cambiar el array anterior usando el metodo map el cual se le pasa como parametro una funcion
     try {
         var personajes = await Promise.all(promesas) //aqui se va detener hasta que se cumplan todad las promesas
-        console.log(personajes) //imrprime los personajes
+        console.log(personajes) //imprime los personajes
     } catch (id) { //capura el error dependendiendo en cual id falle
         onError(id) //le pasa el id con error al funcion
     }
